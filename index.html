@@ -5,9 +5,47 @@
     <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
   </head>
   <body>
+    <main>
+    <div class="container">
+      <div class="avatar">
+      <span>
+        <img src="https://infoenem.com.br/wp-content/uploads/2015/06/unicap.png" alt="unicap" />
+      </span>
+      <img 
+      src="https://avatars.githubusercontent.com/u/66319119?v=4" alt="Foto Pessoal" />
+    </div>
+
     <h1>Diogo Ávila</h1>
-    <a href="https://www.instagram.com/diogo_dsa_/" target="_blank"> 
-      <img src="https://avatars.githubusercontent.com/u/66319119?v=4"  alt="Icone instagram" /> 
-      Aviladiogo30 </a>
-  </body>
+      <ul id="socialLinks">
+      <li class = "Instagram">
+        <a href="" target= "_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/1936/1936319.png"
+            alt="Icone instagram" />
+        </a>
+      </li>
+      <li class = "Linkedin">
+        <a href="" target= "_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+            alt="Icone Linkedin" />
+        </a>
+      </li>
+    </ul>
+    </div>
+    </main>
+    <script>
+
+    const Link = {
+      Linkedin: "in/aviladiogo/",
+      instagram: "diogo_dsa_/"
+    }
+    function changeSocialMediaLinks(){
+      for(let li of socialLinks.children){
+        const social = li.getAttribute('class')
+        li.children[0].href = `https://${social}.com/${Link[social]}`
+      }
+    }
+    changeSocialMediaLinks()
+
+  </script>
+    </body>
 </html>
