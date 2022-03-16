@@ -16,6 +16,10 @@ img {
 
 .audiovisual{
   list-style: none;
-  display: inline-block;
   margin: 0 auto;
+}
+
+.musica{
+  list-style: none;
+  margin: 20 auto;
 }
