@@ -1,3 +1,15 @@
-body {
-  background: orange;
+
+body{
+  background-image: url("https://i.pinimg.com/originals/8d/09/62/8d0962b4c16abe38905aa49334f1cd32.jpg");
+}
+.box {
+  list-style: none;
+  display: flex;
+}
+.centralizar{
+  width: 26%;
+  margin: 0 auto;
+}
+img {
+      border-radius: 50%;
 }
