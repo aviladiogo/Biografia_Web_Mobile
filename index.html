@@ -4,7 +4,7 @@
     <script src="script.js"></script>
     <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
   </head>
-  <body background= "https://i.pinimg.com/originals/8d/09/62/8d0962b4c16abe38905aa49334f1cd32.jpg"> 
+  <body> 
     <main><center>
       <h1>Diogo Ávila</h1>
     <div class="container">
@@ -15,29 +15,28 @@
 
       <p>Meu nome é Diogo dos Santos Ávila, acordo as 5 da manha para me arrumar para faculdade. sou entusiasta de NFTs, Basquete e Computação </p>
     <div class ="centralizar">
-    <ul class ="box" id="socialLinks">
-      <li class = "Instagram">
-        <a href="" target= "_blank">
+    <ul class ="box">
+      <li>
+        <a href="https://www.instagram.com/diogo_dsa_/" target= "_blank">
           <img src="https://img.icons8.com/bubbles/2x/instagram.png"
             alt="Icone instagram"
             width="100" height="100"/>
         </a>
       </li> 
       
-        <li class = "Linkedin">
-        <a href="" target= "_blank">
+        <li>
+        <a href="https://www.linkedin.com/in/aviladiogo/" target= "_blank">
           <img src="https://img.icons8.com/bubbles/344/linkedin.png"
             alt="Icone Linkedin" 
             width="100" height="100"/>
             
         </a>
       </li>
-      <li class = "malito">
-        <a href="" target= "_blank">
+      <li>
+        <a href="mailto:aviladiogo30@gmail.com?subject=Seu site é incrivel" target= "_blank">
           <img src="https://img.icons8.com/bubbles/2x/gmail.png"
-            alt="Icone Linkedin" 
+            alt="Icone Gmail" 
             width="100" height="100"/>
-            
         </a>
       </li>
       
@@ -45,6 +44,9 @@
   </div>
 
    <style>
+    body{
+      background-image: url("https://i.pinimg.com/originals/8d/09/62/8d0962b4c16abe38905aa49334f1cd32.jpg");
+    }
     .box {
       list-style: none;
       display: flex;
@@ -56,25 +58,11 @@
     img {
           border-radius: 50%;
     }
+    
     </style>
     
       
   </center></main>
     <script>
-
-    const Link = {
-      Linkedin: "in/aviladiogo/",
-      Instagram: "diogo_dsa_/",
-      malito: "aviladiogo30@gmail?Subject=Contato&Body=Seu%20Site%20ficou%20muito%20bom%20Mano"
-    }
-    function changeSocialMediaLinks(){
-      for(let li of socialLinks.children){
-        const social = li.getAttribute('class')
-        li.children[0].href = `https://${social}.com/${Link[social]}`
-      }
-    }
-    changeSocialMediaLinks()
-
-  </script>
     </body>
 </html>
