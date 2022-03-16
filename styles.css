@@ -13,3 +13,9 @@ body{
 img {
       border-radius: 50%;
 }
+
+.audiovisual{
+  list-style: none;
+  display: inline-block;
+  margin: 0 auto;
+}
